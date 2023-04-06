@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<body>
+    <section class="hero is-info is-fullheight">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="{% url 'landing' %}">
+                            <h1 class="title is-2">TorShare</h1>
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="{% url 'project_list' %}">
+                                    <span class="icon">
+                                        <i class="fa fa-folder"></i>
+                                    </span>
+                                    <span>Projects</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="{%  url 'user_list' %}">
+                                    <span class="icon">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                    <span>Users</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="#">
+                                    <span class="icon">
+                                        <i class="fa fa-sign-in"></i>
+                                    </span>
+                                    <span>Login</span>
+                                </a>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            </div>
+
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="column is-6 is-offset-3">
+                        <h1 class="title">
+                            Never re-invent the wheel again.
+                        </h1>
+                        <h2 class="subtitle">
+                            Torshare supports policy, program and development professionals to share documents
+                            and experience to deliver better outcomes.
+                        </h2>
+                            <div>
+{#                                    <a href="{% url 'register_login' %}" class="button is-light">#}
+{#                                        Register Now#}
+{#                                    </a>#}
+{#                                <button class="button is-light" >Register Now</button>#}
+                                <a class="button is-light" href="{% url 'register_login' %}">
+                                    Register Now
+                                </a>
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+</body>
+
+
+{% endblock content %}
