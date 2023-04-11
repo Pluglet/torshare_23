@@ -1,0 +1,77 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary_color: #2E0F61;
+    --secondary_color: #FFB54F;
+    --background_color: #FDFDFDFF;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+}
+
+html,body {
+    background-color: var(--background_color);
+    margin: 0;
+    height: 100%;
+}
+
+/*NAVBAR styling*/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tor {
+    color: var(--primary_color);
+    font-size: 3rem;
+
+}
+
+.share {
+    color: var(--secondary_color);
+    font-size: 3rem;
+
+}
+
+.navbar-item {
+    color: var(--primary_color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 1rem;
+}
+
+.navbar-item:link {
+    text-decoration: none;
+}
+
+.navbar-item:visited {
+    text-decoration: none;
+}
+
+.navbar-item:hover {
+    text-decoration: none;
+}
+
+.navbar-item:active {
+    text-decoration: none;
+}
+
+.button {
+    background-color: var(--secondary_color);
+    color: var(--primary_color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+}
